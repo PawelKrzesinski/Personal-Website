@@ -4,53 +4,73 @@
     <meta charset="utf-8"/>
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="index.css">
-	<link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 	<title>Krzesinski's Web Development portfolio</title>
   </head>
 <body>
-	<div class='header' id='header'>
-		<div class="headerLeft">
-			<p class='name'>Pawel</p>
-			<p class="surname">Krzesinski</p>
+	<div class="main">
+		<div class='header headerSlide' id='header'>
+			<div class="headerLeft" id='headerLeft'>
+				<h1 class='name'>Pawel</h1>
+				<h1 class="surname"><img src='./images/technology.svg'/> Krzesinski</h1>
+			</div>
+			<i class="fas fa-bars"></i>
+			<ul class="navBar"><b>
+				<li class="navBtnAbout"><a href='index.html'>About Me</a></li>
+				<li class="navBtnProjects"><a href='projects.html'>Projects</a></li>
+				<li class="navBtnContact"><a href='contact.html'>Contact</a></li>
+			</ul></b>
 		</div>
-		<ul class="navBar">
-			<li class="navBtnAbout"><a href='index.html'>About Me</a></li>
-			<li class="navBtnProjects"><a href='projects.html'>Projects</a></li>
-			<li class="navBtnContact"><a href='contact.html'>Contact</a></li>
-		</ul>
-	</div>
-	
-	<div class="background" id='backgroundBlack'>
-		<div class='content'>
+		<div class="photoContainer">
+			<img class='myPhoto' src="./images/myPhoto2.jpg"/>
 			<div class="text1" id='text1anim'>
-				<h1>Hello, I'm Pawel! I'm interested in working 
-					as a Web Developer but...</h1>
-			</div>
-			<div class="text2" id='text2anim'>
-				<h1>...i've been working last almost 10 years as a chef 
-					and i discovered that it is not for me, couldn't 
-					see myself in 20 years there, always prefered tech 
-					stuff(although i enjoy cooking in my free time!)...</h1>
+				<h1>Hello, Welcome to my personal portfolio !</h1>
+				<h3>My name is Pawel and i am looking for a job as a web developer...<br>
+				</h3>
 			</div>
 		</div>
-	</div>
-	<div class='content2'>
+		<div class="content" id='content'>
+			<div class="text2" id='text2anim'>
+					<h1>...For last almost 10 years i have been working as a chef
+						and in summer 2019, i decided, this is not for me.
+						I love cooking, but as a hobby, not a profession.
+						I always have been more in to tech stuff. Had my very
+						first PC when i was around 9 years old. I graduated 
+						an IT high school, then because of a family situation
+						i started helping out in a family restaurant. I was working in different
+						kitchens since then...
+					</h1>
+			</div>
+		
+		</div>
+	<div class="content2">	
 		<div class="text3" id='text3anim'>
-			<h1>...Since i became aware that i want to be a Developer, i've 
-			been doing what i could, to achieve that goal...</h1>
+			<h1>... After many years i never was happy really. 
+				Thanks to my friend i got excited about being a Developer, 
+				done some research and started studying HTML, CSS and Javascript...</h1>
 		</div>
 		<div class="text4" id='text4anim'>
 			<h1>...Now it was time to put what i have learned in to 
-			action, so i started this project. Please, check out 
-			my other projects, there is a button in upper-right 
-			corner !</h1>
+			action, so i started this project.<br> <span id='text4span' class='text4span'>Please, check out 
+			my other works <span class='hereBtn'>HERE</span> or there is a button in the upper-right 
+			corner !</span></h1>
 		</div>
 	</div>
 
 
+
+	</div>
+	<div class="footer">
+		<p>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart"
+		title="smalllikeart">smalllikeart</a> from 
+		<a href="https://www.flaticon.com/" title="Flaticon"> 
+			www.flaticon.com</a></p>
+	</div>
+
+
+
+</body>
 <script src="./app.js"></script>
 <script src="https://kit.fontawesome.com/c6015819ca.js" crossorigin="anonymous"></script>
-</body>
-
 
 </html>
