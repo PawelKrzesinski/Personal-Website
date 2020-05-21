@@ -8,52 +8,83 @@
 	<title>Krzesinski's Web Development portfolio</title>
   </head>
 <body>
+<div class="mainBody">
+	<div id='date'>
+		<div class="dateContainer">
+			<span id='day'></span>
+			<span id='month'></span>
+			<span id='year'></span>
+		</div>
+	</div>
 	<div class="main">
-		<div class='header headerSlide' id='header'>
+		<div class='header' id='header'>
 			<div class="headerLeft" id='headerLeft'>
-				<h1 class='name'>Pawel</h1>
-				<h1 class="surname"><img src='./images/technology.svg'/> Krzesinski</h1>
+				<a href='index.html'>
+					<h1 class='name'>Pawel Krzesinski</h1>
+				</a>
 			</div>
-			<i class="fas fa-bars"></i>
-			<ul class="navBar"><b>
-				<li class="navBtnAbout"><a href='index.html'>About Me</a></li>
-				<li class="navBtnProjects"><a href='projects.html'>Projects</a></li>
-				<li class="navBtnContact"><a href='contact.html'>Contact</a></li>
+			<ul class="navBar" id="navBar"><b>
+				<li><a href='about.html'>About Me</a></li>
+				<li><a href='projects.html'>Projects</a></li>
+				<li><a href='contact.html'>Contact</a></li>
 			</ul></b>
 		</div>
-		<div class="photoContainer">
-			<img class='myPhoto' src="./images/myPhoto2.jpg"/>
-			<div class="text1" id='text1anim'>
-				<h1>Hello, Welcome to my personal portfolio !</h1>
-				<h3>My name is Pawel and i am looking for a job as a web developer...<br>
-				</h3>
+		<div class="mainBackground1">
+			<div id="dropDownLeft" class="dropDownLeftB"></div>
+			<i class="fas fa-bars" id='bars'></i>
+			<div class="dropDownDiv" id="dropDownDiv">
+				<div class="dropDownMenu" id="dropDownMenu">
+					<span class="navBtnAbout"><a href='about.html'>About Me</a></span>
+					<span class="navBtnProjects"><a href='projects.html'>Projects</a></span>
+					<span class="navBtnContact"><a href='contact.html'>Contact</a></span>
+				</div>
+			</div>
+			<div class="photoContainer" id="photoDiv">
+				<img class='myPhoto' src="./images/myPhoto2.jpg"/>
+				<div class="text1" id='text1anim'>
+					<h1>Hello, Welcome to my personal portfolio !</h1>
+					<h3>My name is Pawel and i am looking for a job as a web developer...<br>
+					</h3>
+				</div>
 			</div>
 		</div>
 		<div class="content" id='content'>
-			<div class="text2" id='text2anim'>
-					<h1>...For last almost 10 years i have been working as a chef
+			<div class="contentWhiteFilter">
+				<div class="text2" id='text2anim'>
+					<h2>...For last almost 10 years i have been working as a chef
 						and in summer 2019, i decided, this is not for me.
 						I love cooking, but as a hobby, not a profession.
 						I always have been more in to tech stuff. Had my very
 						first PC when i was around 9 years old. I graduated 
-						an IT high school, then because of a family situation
-						i started helping out in a family restaurant. I was working in different
-						kitchens since then...
-					</h1>
+						an IT school when i was 20, then because of a family situation
+						i started helping out in a family restaurant. I was working in various
+						chef jobs since then...
+					</h2>
+				</div>
 			</div>
-		
 		</div>
 	<div class="content2">	
 		<div class="text3" id='text3anim'>
-			<h1>... After many years i never was happy really. 
+			<h2>... After many years i never was happy really. 
 				Thanks to my friend i got excited about being a Developer, 
-				done some research and started studying HTML, CSS and Javascript...</h1>
+				done some research and started studying HTML, CSS and Javascript.
+				Last few months i have spent learning, practicing and making projects...</h2>
+				<img class='bigImg1' src="./images/laptop.jpg"/>
 		</div>
+
 		<div class="text4" id='text4anim'>
-			<h1>...Now it was time to put what i have learned in to 
-			action, so i started this project.<br> <span id='text4span' class='text4span'>Please, check out 
-			my other works <span class='hereBtn'>HERE</span> or there is a button in the upper-right 
-			corner !</span></h1>
+			<img class='bigImg2' src="./images/smartphone.jpg"/>
+			<h2>...Now it was time to put what i have learned in to 
+			action, so i started this project. Please, check out 
+			my other projects, there is a button in the upper-right 
+			corner !</h2>
+
+		</div>
+		<div class="langIcons" id='langIcons'>
+			<h3>Website made with</h3>
+			<img src='./images/html.svg'/>
+			<img src='./images/css.svg'/>
+			<img src='./images/js.svg'/>
 		</div>
 	</div>
 
@@ -61,15 +92,17 @@
 
 	</div>
 	<div class="footer">
-		<p>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart"
+		<span class='copyrights' id='copyrights'></span><br>
+		<span>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart"
 		title="smalllikeart">smalllikeart</a> from 
 		<a href="https://www.flaticon.com/" title="Flaticon"> 
-			www.flaticon.com</a></p>
+			www.flaticon.com</a><span>
 	</div>
 
 
-
+</div>	
 </body>
+<script src="./main.js"></script>
 <script src="./app.js"></script>
 <script src="https://kit.fontawesome.com/c6015819ca.js" crossorigin="anonymous"></script>
 
