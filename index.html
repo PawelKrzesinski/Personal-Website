@@ -7,100 +7,98 @@
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 	<title>Krzesinski's Web Development portfolio</title>
   </head>
-<body>
-<div class="mainBody">
-	<div id='date'>
-		<div class="dateContainer">
-			<span id='day'></span>
-			<span id='month'></span>
-			<span id='year'></span>
-		</div>
-	</div>
+<body>	
 	<div class="main">
+	
+		<!-- START OF THE HEADER-->
 		<div class='header' id='header'>
-			<div class="headerLeft" id='headerLeft'>
+			<div class="header_left" id='header_left'>
 				<a href='index.html'>
 					<h1 class='name'>Pawel Krzesinski</h1>
 				</a>
 			</div>
-			<ul class="navBar" id="navBar"><b>
+			<div id='date'>
+				<div class="date_container">
+					<span id='day'></span>
+					<span id='month'></span>
+					<span id='year'></span>
+				</div>
+			</div>
+			<ul class="nav_bar" id="nav_bar"><b>
 				<li><a href='about.html'>About Me</a></li>
 				<li><a href='projects.html'>Projects</a></li>
 				<li><a href='contact.html'>Contact</a></li>
 			</ul></b>
+			<div id="drop_down_left"></div>
+				<i class="fas fa-bars" id='bars'></i>
+				<div class="drop_down_div" id="drop_down_div">
+					<div class="drop_down_menu" id="drop_down_menu">
+						<span class="nav_btn_about"><a href='about.html'>About Me</a></span>
+						<span class="nav_btn_projects"><a href='projects.html'>Projects</a></span>
+						<span class="nav_btn_contact"><a href='contact.html'>Contact</a></span>
+					</div>
+				</div>
 		</div>
-		<div class="mainBackground1">
-			<div id="dropDownLeft" class="dropDownLeftB"></div>
-			<i class="fas fa-bars" id='bars'></i>
-			<div class="dropDownDiv" id="dropDownDiv">
-				<div class="dropDownMenu" id="dropDownMenu">
-					<span class="navBtnAbout"><a href='about.html'>About Me</a></span>
-					<span class="navBtnProjects"><a href='projects.html'>Projects</a></span>
-					<span class="navBtnContact"><a href='contact.html'>Contact</a></span>
+		<!-- END OF THE HEADER-->
+		
+		<div class="background_container">
+			<div class="main_background" id='background'>
+				<div class="text1" id='text1_anim'>
+					<h1>Welcome to my personal portfolio !</h1>
+					<button id="get_started_btn"><a href='#tech_icon'>GET STARTED</a></button>
 				</div>
 			</div>
-			<div class="photoContainer" id="photoDiv">
-				<img class='myPhoto' src="./images/myPhoto2.jpg"/>
-				<div class="text1" id='text1anim'>
-					<h1>Hello, Welcome to my personal portfolio !</h1>
-					<h3>My name is Pawel and i am looking for a job as a web developer...<br>
-					</h3>
-				</div>
-			</div>
-		</div>
-		<div class="content" id='content'>
-			<div class="contentWhiteFilter">
-				<div class="text2" id='text2anim'>
-					<h2>...For last almost 10 years i have been working as a chef
-						and in summer 2019, i decided, this is not for me.
-						I love cooking, but as a hobby, not a profession.
-						I always have been more in to tech stuff. Had my very
-						first PC when i was around 9 years old. I graduated 
-						an IT school when i was 20, then because of a family situation
-						i started helping out in a family restaurant. I was working in various
-						chef jobs since then...
-					</h2>
-				</div>
-			</div>
-		</div>
-	<div class="content2">	
-		<div class="text3" id='text3anim'>
-			<h2>... After many years i never was happy really. 
-				Thanks to my friend i got excited about being a Developer, 
-				done some research and started studying HTML, CSS and Javascript.
-				Last few months i have spent learning, practicing and making projects...</h2>
-				<img class='bigImg1' src="./images/laptop.jpg"/>
 		</div>
 
-		<div class="text4" id='text4anim'>
-			<img class='bigImg2' src="./images/smartphone.jpg"/>
+	<div class="tech_icon"><img id="tech_icon" src="./images/spinning.gif"/></div>
+	
+		<div class="content" id='content'>
+			<div id="animated_background">
+				<div class="text2" id='text2_anim'>
+					<img id='my_photo' src="./images/myPhoto2.jpg"/>
+					<h2 id="intro1">Hi ! My name is Pawel and i am working towards getting a job in 
+						a web developement. For last almost 10 years i have been working as a chef
+						but after this many years i never was happy really... </h2>
+				</div>
+			</div>
+		</div>
+		
+	<div class="content2">	
+		<div class="text3" id='text3_anim'>
+			<img class='big_img1' src="./images/laptop.jpg"/>
+			<h2>... Thanks to my friend i got excited about being a Developer, 
+				done some research and started studying HTML, CSS and Javascript.
+				Last few months i have spent learning, practicing and making projects...</h2>
+				
+		</div>
+
+		<div class="text4" id='text4_anim'>
+			
 			<h2>...Now it was time to put what i have learned in to 
 			action, so i started this project. Please, check out 
 			my other projects, there is a button in the upper-right 
 			corner !</h2>
-
+			<img class='big_img2' src="./images/smartphone.jpg"/>
 		</div>
-		<div class="langIcons" id='langIcons'>
-			<h3>Website made with</h3>
+
+	</div>
+
+	<div class="lang_icons" id='lang_icons'>
+		<h3>Website made with</h3>
+		<div>
 			<img src='./images/html.svg'/>
 			<img src='./images/css.svg'/>
 			<img src='./images/js.svg'/>
 		</div>
 	</div>
 
-
-
 	</div>
 	<div class="footer">
 		<span class='copyrights' id='copyrights'></span><br>
-		<span>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart"
-		title="smalllikeart">smalllikeart</a> from 
-		<a href="https://www.flaticon.com/" title="Flaticon"> 
-			www.flaticon.com</a><span>
 	</div>
 
 
-</div>	
+
 </body>
 <script src="./main.js"></script>
 <script src="./app.js"></script>
