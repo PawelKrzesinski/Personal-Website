@@ -1,0 +1,102 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+@media only screen and (min-width: 350px) {
+	.background_container {
+		height: auto;
+	}
+	.main_background {
+		height: auto;
+		min-height: 100%;
+	}
+	.form {
+		width: 70%;
+		background: rgba(211, 211, 211, 0.9);
+	}
+	form{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5rem;
+	}
+	form textarea {
+		height: 100px;
+		width: 200px;
+		border-radius: 10%/ 20px 20px 20px 20px;
+		padding: 0.4rem;
+		resize: none;
+		box-shadow: var(--boxShadowBlack);
+	}
+	.form input {
+		margin: 0.3rem auto 3rem auto;
+		border: 0;
+		border-radius: 15%/ 30px 30px 30px 30px;
+		height: 30px;
+		padding-left: 10px;
+		box-shadow: var(--boxShadowBlack);
+	}
+	.form label {
+		font-weight: 900;
+	}
+	#submit {
+		margin-top: 2rem;
+		width: 150px;
+		height: 50px;
+		font-size: 1.3rem;
+		padding: 0 !important;
+	}
+	#submit:hover{
+		background: lightgray;
+	}
+	#submit:active{
+		background-color: gray;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.form{
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 1200px){
+	.form{
+	width: 40%;
+	}
+}
+
+@media only screen and (min-width: 2000px){
+	.form{
+		width: 30%;
+		font-size: 1.5rem;
+	}
+
+}
+
+input{
+	opacity: 0;
+}
+
+textarea{
+	opacity: 0;
+}
+label{
+	opacity: 0;
+}
+
+
+
+/* label__name = 
+label__email =
+label__company
+label__comment
+input__name = 
+input__email =
+input__company
+input__comment
+submit = */
