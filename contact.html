@@ -1,0 +1,79 @@
+<!DOCTYPE="html">
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+	<title>Krzesinski's Web Development portfolio</title>
+  </head>
+<body>
+	<!-- START OF THE HEADER-->
+	<div class='header' id='header'>
+		<div class="header_left" id='header_left'>
+			<a href='index.html'>
+				<h1 class='name'>Pawel Krzesinski</h1>
+			</a>
+		</div>
+		<div id='date'>
+			<div class="date_container">
+				<span id='day'></span>
+				<span id='month'></span>
+				<span id='year'></span>
+			</div>
+		</div>
+		<ul class="nav_bar" id="nav_bar"><b>
+			<li><a href='about.html'>Resume</a></li>
+			<li><a href='projects.html'>Projects</a></li>
+			<li><a href='contact.html'>Contact</a></li>
+		</ul></b>
+		<div id="drop_down_left"></div>
+			<i class="fas fa-bars" id='bars'></i>
+			<div class="drop_down_div" id="drop_down_div">
+				<div class="drop_down_menu" id="drop_down_menu">
+					<span class="nav_btn_about"><a href='about.html'>Resume</a></span>
+					<span class="nav_btn_projects"><a href='projects.html'>Projects</a></span>
+					<span class="nav_btn_contact"><a href='contact.html'>Contact</a></span>
+				</div>
+			</div>
+	</div>
+	<!-- END OF THE HEADER-->
+	<!-- START OF THE MAIN CONTENT -->
+	<div class="main">
+		<div class="background_container">
+			<div class="main_background" id='background'>
+				<div class="form">
+					<form action="https://formspree.io/pawel.krzesinski1989@gmail.com" method="POST" enctype="multipart/form-data" id="contact">
+						<label for="fullname" id="label__name">Full name:</label>
+						<input type='text' name='fullname' placeholder="Your full name..."  required id="input__name"/>
+						<label for="e-mail" aria-required="true" id="label__email">E-mail address:</label>
+						<input type='email' name='e-mail' placeholder="Your e-mail address..."  required id="input__email"/>
+						<label for="companyname" aria-required="true" id="label__company">Company Name:</label>
+						<input type='text' name='companyname' placeholder="Your company name..."  required id="input__company"/>
+						<label for="comment" id="label__comment">Your message:</label>
+						<textarea name="comment" form="contact" placeholder="Put your message in here..." id="input__comment"></textarea>
+						<input type="submit" id="submit"/>
+					</form>
+				</div>
+			</div>
+		</div>
+	<!-- END OF MAIN CONTENT -->
+	<div class="lang_icons" id='lang_icons'>
+		<h3>Website made with</h3>
+		<div>
+			<img src='./images/html.svg'/>
+			<img src='./images/css.svg'/>
+			<img src='./images/js.svg'/>
+		</div>
+	</div>
+	<div class="footer">
+		<span class='copyrights' id='copyrights'></span><br>
+	</div>
+</div>
+</body>
+<script src="./js/contact.js"></script>
+<script src="./js/app.js"></script>
+<script src="https://kit.fontawesome.com/c6015819ca.js" crossorigin="anonymous"></script>
+
+</html>
