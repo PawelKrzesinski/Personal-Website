@@ -173,6 +173,7 @@ h1.name{
 	background-color: var(--grayBackground);
 	width: 100%;
 	animation: slide_right 1s ease;
+	z-index: 1000;
 }
 
 .header_left {
@@ -303,8 +304,8 @@ h1.name {
 
 .background_container{
 	width: 100%;
-	height: 100%;
-	background-image: url(./images/background7_big.jpg);
+	height: auto;
+	background-image: url(../images/background7_big.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -313,13 +314,13 @@ h1.name {
 .main_background {
 	background-color: var(--whiteBackground);
 	width: 100%;
-	height: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 }
 
 .text1{
-	margin: auto 0;
+	margin: 5rem 0;
 	align-items: center;
 	justify-content: center;
 	background-color: var(--grayBackground);
@@ -330,7 +331,6 @@ h1.name {
 	font-family: 'Titillium Web', sans-serif;
 	animation: appear 0.5s ease-in-out;
 	padding: 0 2rem;
-
 }
 
 .text1 h1 {
@@ -646,6 +646,9 @@ h1.name {
 	}
 	.date_container{
 		font-size: 1.5rem;
+	}
+	.text1 {
+		margin: 10rem 0;
 	}
 	#my_photo {
 		width: 9rem;
