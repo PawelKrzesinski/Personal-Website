@@ -5,13 +5,7 @@ const display__img = document.querySelector('.carousel__display--image');
 const display__desc = document.querySelector('.carousel__display--description-paragraph');
 const display__title = document.querySelector('.carousel__display--title');
 
-
-
-
-
 let direction;
-
-
 let projects = [
 	{
 		title: "To - Do App",
@@ -172,5 +166,3 @@ slides.forEach(slide => {
 		
 	})
 })
-
-
