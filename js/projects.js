@@ -14,49 +14,36 @@ let direction;
 
 let projects = [
 	{
-		title: "ToDoApp",
+		title: "To - Do App",
 		image: ('./images/projects/ToDoApp.jpg'),
 		github: "https://github.com/PawelKrzesinski/To-do-app",
+		glitch: "https://glitch.com/~mytodo-app1",
 		description: "My to-do application using HTML, CSS and JS. I have made this application so you can dynamically add " +
-		"and delete your daily to-do's. All tasks are stored in a local storage and removed from it when finished. " +
-		"I have not add a remove function to the check button to prevent accidental deletion of a task. "
+		"and delete your daily to-do's. All tasks are stored in a local storage and removed from it when finished. "
 	},
 	{
-		title: "ToDoApp2",
-		image: ('./images/projects/ToDoApp.jpg'),
-		github: "https://github.com/PawelKrzesinski/To-do-app",
-		description: "My to-do application using HTML, CSS and Japplication so you can  removed from it when finished. " +
-		"I have not add a remove  button to prevent accidental deletion of a task. "
+		title: "Tic Tac Toe Game",
+		image: ('./images/projects/TicTacToe.jpg'),
+		github: "https://github.com/PawelKrzesinski/Tic-tac-toe",
+		glitch: "https://glitch.com/~my-tic-tac-toe",
+		description: "Simple Javascript Tic Tac Toe game. Only Player vs Player. Uses DOM manipulation to add and remove classes and styles."
 	},
 	{
-		title: "ToDoApp3",
-		image: ('./images/projects/ToDoApp.jpg'),
-		github: "https://github.com/PawelKrzesinski/To-do-app",
-		description: "Mly to-do's. All tasks are stored in a local storage and removed from it when finished. " +
-		"I have not add a remove function to the check button to prevent accidental deletion of a task. "
+		title: "Weather API App",
+		image: ('./images/projects/WeatherApp.jpg'),
+		github: "https://github.com/PawelKrzesinski/WeatherApp",
+		glitch: "https://glitch.com/~myweather-app",
+		description: "Current weather app. Built on Node.js server with Open Weather API. Gets the current weather depending on geolocation."
+		+ "Gets new data every 5 minutes"
 	},
 	{
-		title: "ToDoApp4",
-		image: ('./images/projects/ToDoApp.jpg'),
-		github: "https://github.com/PawelKrzesinski/To-do-app",
-		description: "My to-do application using HTML, CSS and JS. I have made this application so you can dynamically add " +
-		"and deletes. All tasks are stored in age and removed from it when finished. " +
-		"I have not add a remove function to the check button to prevent accidental deletion of a task. "
-	},{
-		title: "ToDoApp5",
-		image: ('./images/projects/ToDoApp.jpg'),
-		github: "https://github.com/PawelKrzesinski/To-do-app",
-		description: "My to-do application using HTML, CSS and JS. I have made this application so you can dynamically add " +
-		"and delete your daily to-do's. All tasks are stored in tion of a task. "
-	},
-	{
-		title: "ToDoApp6",
-		image: ('./images/projects/ToDoApp.jpg'),
-		github: "https://github.com/PawelKrzesinski/To-do-app",
-		description: "My to-do application using HTML, CSS and JS. I have made this application so you can dynamically add " +
-		"and delete your daily to from it when finished. " +
-		"I have not add a remove function to the check button to prevent accidental deletion of a task. "
-	},
+		title: "Culinary Blog",
+		image: ('./images/projects/DashOfPassion.jpg'),
+		github: "https://github.com/PawelKrzesinski/DashOfPassion",
+		glitch: "https://glitch.com/~dashofpassion",
+		description: "Culinary Blog. Using a nutrition API calculates calories for every recipe. As cooking is my hobby all the recipes are mine."
+		+ "<br><br>PROJECT IN PROGRESS"
+	}
 ]
 
 //adds projects to the carousel
@@ -78,10 +65,6 @@ function setSlidePos(slide, index) {
 	
 slides.forEach(setSlidePos);
 
-
-
-
-
 button__next.addEventListener('click', e =>{
 	const current__slide = track.querySelector('.carousel__current-slide');
 	const next__slide = current__slide.nextElementSibling;
@@ -99,7 +82,9 @@ button__next.addEventListener('click', e =>{
 	projects.forEach(project => {
 		if(next__slide.firstElementChild.classList == `carousel__images ${project.title}`){
 			display__img.innerHTML = `<img src='${next__slide.firstElementChild.src}'/img>`
-			display__title.innerHTML = `${project.title}  <a href="${project.github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
+			display__title.innerHTML = `${project.title}  <a href="${project.glitch}" target="__blank">
+			<img class='icon__glitch' src="./images/glitch.svg"/></a>
+			<a href="${project.github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
 			display__desc.innerHTML = `${project.description}`;
 		}
 	})
@@ -126,7 +111,9 @@ button__prev.addEventListener('click', () => {
 	projects.forEach(project => {
 		if(prev__slide.firstElementChild.classList == `carousel__images ${project.title}`){
 			display__img.innerHTML = `<img src='${prev__slide.firstElementChild.src}'/img>`
-			display__title.innerHTML = `${project.title}  <a href="${project.github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
+			display__title.innerHTML = `${project.title}  <a href="${project.glitch}" target="__blank">
+			<img class='icon__glitch' src="./images/glitch.svg"/></a>
+			<a href="${project.github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
 			display__desc.innerHTML = `${project.description}`;
 		}
 	})
@@ -135,7 +122,7 @@ button__prev.addEventListener('click', () => {
 
 //Displays first project
 display__img.innerHTML = `<img src='${projects[0].image}'/img>`
-display__title.innerHTML = `${projects[0].title}  <a href="${projects[0].github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
+display__title.innerHTML = `${projects[0].title}  <a href="${projects[0].glitch}" target="__blank"><img class='icon__glitch' src="./images/glitch.svg"/></a><a href="${projects[0].github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
 display__desc.innerHTML = `${projects[0].description}`;
 
 
@@ -174,7 +161,9 @@ slides.forEach(slide => {
 			projects.forEach(project => {
 				if(e.target.classList == `carousel__images ${project.title}`){
 					display__img.innerHTML = `<img src='${e.target.src}'/img>`
-					display__title.innerHTML = `${project.title}  <a href="${project.github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
+					display__title.innerHTML = `${project.title}  <a href="${project.glitch}" target="__blank">
+					<img class='icon__glitch' src="./images/glitch.svg"/></a>
+					<a href="${project.github}" target="__blank"><img class='icon__git' src="./images/GitHub-Mark-32px.png"/></a>`;
 					display__desc.innerHTML = `${project.description}`;
 				}
 			})
