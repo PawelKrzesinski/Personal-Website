@@ -37,6 +37,15 @@ let projects = [
 		glitch: "https://glitch.com/~dashofpassion",
 		description: "Culinary Blog. Using a nutrition API calculates calories for every recipe. As cooking is my hobby all the recipes are mine."
 		+ "<br><br>PROJECT IN PROGRESS"
+	},
+	{
+		title: "ISS Tracking app",
+		image: ('./images/projects/iss-tracking-app.jpg'),
+		github: "https://github.com/PawelKrzesinski/iss-tracking-app",
+		glitch: "https://pawelkrzesinski.github.io/iss-tracking-app/",
+		description: "International Space Station tracking APP. Uses ISS API to get location in latitude and longitude. Uses OpenStreetMap API "
+			    +"to get map elements and create a map then displays ISS location. Updates every 5 seconds"
+		
 	}
 ]
 
