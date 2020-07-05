@@ -11,7 +11,7 @@ let projects = [
 		title: "To - Do App",
 		image: ('./images/projects/ToDoApp.jpg'),
 		github: "https://github.com/PawelKrzesinski/To-do-app",
-		glitch: "https://glitch.com/~mytodo-app1",
+		glitch: "https://mytodo-app1.glitch.me",
 		description: "My to-do application using HTML, CSS and JS. I have made this application so you can dynamically add " +
 		"and delete your daily to-do's. All tasks are stored in a local storage and removed from it when finished. "
 	},
@@ -19,24 +19,24 @@ let projects = [
 		title: "Tic Tac Toe Game",
 		image: ('./images/projects/TicTacToe.jpg'),
 		github: "https://github.com/PawelKrzesinski/Tic-tac-toe",
-		glitch: "https://glitch.com/~my-tic-tac-toe",
+		glitch: "https://my-tic-tac-toe.glitch.me",
 		description: "Simple Javascript Tic Tac Toe game. Only Player vs Player. Uses DOM manipulation to add and remove classes and styles."
 	},
 	{
 		title: "Weather API App",
 		image: ('./images/projects/WeatherApp.jpg'),
 		github: "https://github.com/PawelKrzesinski/WeatherApp",
-		glitch: "https://glitch.com/~myweather-app",
+		glitch: "https://myweather-app.glitch.me",
 		description: "Current weather app. Built on Node.js server with Open Weather API. Gets the current weather depending on geolocation."
-		+ "Gets new data every 5 minutes"
+		+ " Gets new data every 5 minutes"
 	},
 	{
 		title: "Culinary Blog",
 		image: ('./images/projects/DashOfPassion.jpg'),
 		github: "https://github.com/PawelKrzesinski/DashOfPassion",
-		glitch: "https://glitch.com/~dashofpassion",
+		glitch: "https://dashofpassion.glitch.me",
 		description: "Culinary Blog. Using a nutrition API calculates calories for every recipe. As cooking is my hobby all the recipes are mine."
-		+ "<br><br>PROJECT IN PROGRESS"
+		+ "<br><br><b>PROJECT IN PROGRESS</b>"
 	},
 	{
 		title: "ISS Tracking app",
