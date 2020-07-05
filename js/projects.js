@@ -36,7 +36,7 @@ let projects = [
 		github: "https://github.com/PawelKrzesinski/DashOfPassion",
 		glitch: "https://dashofpassion.glitch.me",
 		description: "Culinary Blog. Using a nutrition API calculates calories for every recipe. As cooking is my hobby all the recipes are mine."
-		+ "<br><br><b>PROJECT IN PROGRESS</b>"
+		+ "<br><br>PROJECT IN PROGRESS"
 	},
 	{
 		title: "ISS Tracking app",
