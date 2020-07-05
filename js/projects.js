@@ -35,7 +35,7 @@ let projects = [
 		image: ('./images/projects/DashOfPassion.jpg'),
 		github: "https://github.com/PawelKrzesinski/DashOfPassion",
 		glitch: "https://dashofpassion.glitch.me",
-		description: "Culinary Blog. Using a nutrition API calculates calories for every recipe. As cooking is my hobby all the recipes are mine."
+		description: "Culinary Blog. Using a nutrition API"
 		+ "<br><br>PROJECT IN PROGRESS"
 	},
 	{
