@@ -558,13 +558,11 @@ h1.name {
 		text-align: center;
 		background-color: lightgray;
 		transition: all 0.5s linear;
-		transform: translateY(-60%);
 		cursor: pointer;
 		border: 1px solid black;
 	}
 	
 	.nav_bar li:hover {
-		transform: translateY(-10%);
 		box-shadow: var(--boxShadowBlack);
 		background: linear-gradient(90deg, gray 10%, lightgray 90%)
 		}
