@@ -542,7 +542,7 @@ h1.name {
 	.nav_bar {
 		display: block;
 		position: fixed;
-		top: 0;
+		top: 15px;
 		right: 0;
 		width: 640px;
 		height: auto;
@@ -560,6 +560,7 @@ h1.name {
 		transition: all 0.5s linear;
 		cursor: pointer;
 		border: 1px solid black;
+		transform: none;
 	}
 	
 	.nav_bar li:hover {
