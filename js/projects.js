@@ -34,9 +34,8 @@ let projects = [
 		title: "Culinary Blog",
 		image: ('./images/projects/DashOfPassion.jpg'),
 		github: "https://github.com/PawelKrzesinski/DashOfPassion",
-		glitch: "https://dashofpassion.glitch.me",
-		description: "Culinary Blog. Using a nutrition API"
-		+ "<br><br>PROJECT IN PROGRESS"
+		glitch: "https://dash-of--passion.glitch.me",
+		description: "Culinary Blog and recipe search engine. In the recipe tab, choose a category or type in an ingredient in the search box and browse through recipes !"
 	},
 	{
 		title: "ISS Tracking app",
