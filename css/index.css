@@ -50,8 +50,10 @@ h1.name{
 	width: 100%;
 	height: auto;
 	margin: 0;
-	display: flexbox;
-	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	background-color: gray;
 	color: black;
 }
@@ -59,7 +61,10 @@ h1.name{
 .footer span {
 	font-weight: bolder;
 }
-
+#mail{
+	margin-left: 2rem;
+	font-weight: bolder;
+}
 @keyframes slide_left {
 	0%{
 		opacity: 0; 
