@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
 			photo.style.opacity = '1'
 		},700)
 	}
-	if(background_image.getBoundingClientRect().top <= -1000) {
+	if(background_image.getBoundingClientRect().top <= -800) {
 		text3.classList.add("text3_show", "text3");
 	}
 	if(text2.getBoundingClientRect().top <= 0) {
