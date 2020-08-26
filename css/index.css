@@ -24,12 +24,8 @@ html{
 	padding: 0;
 	font-family: 'Titillium Web', sans-serif;
 	letter-spacing: 0.1rem;
-}
-
-body {
 	width: 100%;
 }
-
 .main {
 	min-height: 100%;
 	background-color: gainsboro;
@@ -45,7 +41,8 @@ h1.name{
 	font-size: 2rem;
 }
 
-.footer { 
+.footer {
+	font-size: 0.9rem;
 	overflow: hidden;
 	width: 100%;
 	height: auto;
@@ -62,7 +59,6 @@ h1.name{
 	font-weight: bolder;
 }
 #mail{
-	margin-left: 2rem;
 	font-weight: bolder;
 }
 
@@ -73,17 +69,6 @@ h1.name{
 	0%{
 		opacity: 0; 
 		transform: translateX(-100%);
-	};
-	100%{
-		opacity: 1; 
-		transform: none;
-	};
-}
-
-@keyframes slide_top {
-	0%{
-		opacity: 0; 
-		transform: translateY(-1000%);
 	};
 	100%{
 		opacity: 1; 
@@ -149,7 +134,7 @@ h1.name{
 @media only screen and (min-width: 100px){
 		
 	#date {
-		position: sticky;
+		position: fixed;
 		top: 50px;
 		left: 0;
 		width: 100%;
@@ -159,6 +144,7 @@ h1.name{
 		padding: 0 ;
 		font-family: 'Tangerine', cursive;
 		font-weight: bolder !important;
+		background-color: var(--grayBackground);
 	}
 
 	.date_container {
@@ -176,7 +162,7 @@ h1.name{
 		text-shadow: 2px 2px 5px gray;
 	}
 	.header {
-		position: sticky;
+		position: fixed;
 		top: 0;
 		left: 0;
 		background-color: var(--grayBackground);
@@ -213,9 +199,9 @@ h1.name{
 
 	.fa-bars {
 		position: fixed;
-		top: 10;
-		right: 10;
-		font-size: 40px;
+		top: 10px;
+		right: 30px;
+		font-size: 30px;
 		visibility: visible;
 		text-shadow: none;
 		z-index: 11 !important;
