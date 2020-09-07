@@ -139,7 +139,7 @@ h1.name{
 		animation: slideBottom 0.5s linear;
 		font-family: 'Tangerine', cursive;
 		font-weight: bolder !important;
-		background-color: var(--grayBackground);
+		background-color: transparent;
 	}
 
 	.date_container {
